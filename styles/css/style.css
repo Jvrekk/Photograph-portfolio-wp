@@ -1,0 +1,15 @@
+nav { color: red; }
+
+nav a:hover { color: blue; }
+
+body, html { color: #000; margin: 0 auto; }
+
+a { color: inherit; }
+
+a:hover { color: inherit; }
+
+a:link { text-decoration: none; }
+
+ul { list-style-type: none; }
+
+/*# sourceMappingURL=style.css.map */

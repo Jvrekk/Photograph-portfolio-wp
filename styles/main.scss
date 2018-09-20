@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'nav';
+@import 'footer';
+body,html{
+    color: #000;
+    margin: 0 auto;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+a:link {
+    text-decoration: none;
+}
+ul {list-style-type: none;}
+
+

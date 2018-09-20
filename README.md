@@ -1,3 +1,2 @@
-# Photograph-portfolio-wp
-Motyw WP portfolio pod fotografa
-<JS>
+# Portfolio
+Creating my own portfolio page theme based on wordpress cms
