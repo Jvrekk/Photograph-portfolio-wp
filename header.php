@@ -15,6 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<?php wp_head() ?>
+		
 	</head>
 	
 <?php if(is_front_page()):
@@ -36,15 +37,7 @@ endif; ?>
 			</header>
 <?php endif; ?>
 		
-		<nav id="main-Menu" class="menu">
-			<?php wp_nav_menu( array(
-						'theme_location' => 'main',
-						'menu_id'        => 'primary-menu',
-						'container'		 => false,
-						'menu_class'     => 'list-unstyled',
-			));?>
-		
-		</nav>
+
 					
 			
 	

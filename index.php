@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div class="menu-trigger"><div class="dash"></div><div class="dash"></div><div class="dash"></div></div>
 <div id="page">
 	<div class="main-posts">
 		<div class="container">

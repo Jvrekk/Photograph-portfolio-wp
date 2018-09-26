@@ -1,6 +1,17 @@
+@import 'variables';
 nav{
-    color:red;
+    color:$grey;
+    font-size: 72px;
+    line-height: .83;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width:600px;
+    padding: 20px;
+}
+nav a{
+    transition-duration: 400ms;
 }
 nav a:hover{
-    color:blue;
+    color:#000;
+    transition-duration: 200ms;
 }
