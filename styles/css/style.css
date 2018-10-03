@@ -5,9 +5,12 @@ nav a { transition-duration: 400ms; }
 
 nav a:hover { color: #000; transition-duration: 200ms; }
 
+@media only screen and (max-width: 600px) { nav { font-size: 42px; width: 500px; } }
 .wedding { animation-duration: 20s; animation-iteration-count: infinite; transition-timing-function: ease-in; position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; -webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px); }
 
-.content { z-index: 1000; font-size: 300%; background: white; }
+.homeFirst { background: no-repeat fixed; background-image: url("../../img/kamil.jpg"); background-position: right -35% top; }
+
+.content { z-index: 1000; font-size: 300%; position: relative; font-weight: 900; color: white; text-shadow: 2px 2px 10px #000000; text-align: center; }
 
 .wedding { background: no-repeat center center fixed; background-image: url("../../img/wesele1.jpg"); background-size: cover; animation-name: changeWedding; }
 
@@ -16,7 +19,29 @@ nav a:hover { color: #000; transition-duration: 200ms; }
   50% { background-image: url("../../img/wesele3.jpg"); }
   75% { background-image: url("../../img/wesele4.jpg"); }
   100% { background-image: url("../../img/wesele1.jpg"); } }
+@media only screen and (max-width: 600px) { .home { background-image: url(""); } }
+.main-posts img { margin: 5px; width: 32%; height: auto; }
+
+/* LOADER */
+#preloader { top: 0; position: fixed; width: 100%; height: 100vh; background: #37474f; z-index: 1000; }
+
+#loader { position: relative; left: calc(50%); top: 50%; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 50%; border: 3px solid transparent; border-top-color: #00695c; -webkit-animation: spin 2s linear infinite; animation: spin 2s linear infinite; }
+
+#loader:before { content: ""; position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; border-radius: 50%; border: 3px solid transparent; border-top-color: #00897b; -webkit-animation: spin 3s linear infinite; animation: spin 3s linear infinite; }
+
+#loader:after { content: ""; position: absolute; top: 15px; left: 15px; right: 15px; bottom: 15px; border-radius: 50%; border: 3px solid transparent; border-top-color: #00bfa5; -webkit-animation: spin 1.5s linear infinite; animation: spin 1.5s linear infinite; }
+
+@keyframes spin { 0% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
 body, html { color: #000; margin: 0 auto; font-family: 'Roboto', sans-serif; }
+
+.otherPage { overflow: auto; }
+
+.frontPage { overflow: hidden; }
+
+.thumbnail-image { width: 100%; height: 400px; background: no-repeat center center fixed; background-size: cover; position: relative; }
+
+.post-header { color: #fff; width: 100%; background: rgba(255, 255, 255, 0.2); text-align: center; position: absolute; bottom: 0; font-weight: 900; text-shadow: 2px 2px 10px #000000; }
 
 a { color: inherit; }
 

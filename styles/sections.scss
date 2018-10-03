@@ -19,10 +19,20 @@
     height: 100%;
     @include filter(blur(2px));
 }
+.homeFirst{
+    background:  no-repeat fixed;
+    background-image: url('../../img/kamil.jpg');
+    background-position: right -35% top; 
+    
+}
 .content{
     z-index: 1000;
     font-size: 300%;
-    background: white;
+    position: relative;
+    font-weight: 900;
+    color:white;
+    text-shadow: 2px 2px 10px #000000;
+    text-align: center;
 }
 .wedding{
     background:  no-repeat center center fixed;
@@ -38,4 +48,9 @@
     50% {background-image: url('../../img/wesele3.jpg');}
     75% {background-image: url('../../img/wesele4.jpg');}
     100% {background-image: url('../../img/wesele1.jpg');}
+}
+@media only screen and (max-width: 600px) {
+    .home{
+        background-image: url('');
+    }
 }
