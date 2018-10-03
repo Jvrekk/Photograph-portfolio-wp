@@ -1,0 +1,68 @@
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: "option1 option2 option3";
+    color: #fff;
+  }
+.box{
+    background: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 350%;
+    transition-duration: 400ms;
+}
+.box:hover{
+    filter: brightness(1.5);
+    text-shadow: 2px 2px 10px #000000;
+  
+}
+.option1{
+    grid-area: option1;
+    background-image: url('../../img/welcome/camera.jpg');
+}
+.option2{
+    grid-area: option2;
+    background-image: url('../../img/welcome/photo.jpg');
+    background-position: 0% 0%;
+}
+.option3{
+    grid-area: option3;
+    background-image: url('../../img/welcome/contact.jpg');
+}
+ 
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    //CSS
+    
+  }
+    
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.65fr;
+        grid-template-areas: "option1 option2" 
+                             "option3 option3";
+    }
+    
+  }
+  
+
+  @media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+    //CSS
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "option1" 
+                             "option2" 
+                             "option3";
+    }
+  }

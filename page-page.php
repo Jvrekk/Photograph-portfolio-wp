@@ -4,7 +4,7 @@
 */
 
 get_header(); ?>
-
+	
 <!--<?php if ( is_active_sidebar( 'slider-widget' ) ) : ?>    
             <?php dynamic_sidebar( 'slider-widget' ); ?>
 <?php endif; ?>-->

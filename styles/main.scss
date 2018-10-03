@@ -4,6 +4,7 @@
 @import 'sections';
 @import 'posts';
 @import 'loader';
+@import 'frontPage';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body,html{
     color: #000;
@@ -11,18 +12,15 @@ body,html{
     font-family: 'Roboto', sans-serif;
 }
  .otherPage{
-    overflow:auto;
+    overflow:hidden;
 }
  .frontPage{
     overflow: hidden;
 }
-.thumbnail-image{
-    width: 100%;
-    height:400px;
-    background:  no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
+.page-template-page-page{
+    overflow:auto!important;
 }
+
 .post-header{
     color:#fff;
     width: 100%;

@@ -1,5 +1,26 @@
 .main-posts img{
-    margin:5px;
+    margin:0.33%;
     width:32%;
     height:auto;
 }
+.thumbnail-image{
+    width: 100%;
+    height:400px;
+    background:  no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    top:-32px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .thumbnail-image{
+        background:  no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        top:-50px;
+    }
+    .main-posts img{
+        margin:0.5%;
+        width:48%;
+        height:auto;
+    }
+  }
